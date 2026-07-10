@@ -3,90 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dashboard</title>
+<title>دروستکردنی وەسڵ</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
 
 <body>
 
-<header class="topbar">
+<div class="container">
 
-<div class="logo">
-<h2>ROMA STONE</h2>
-<p>کڕیار: ڕۆما</p>
+<h2>دروستکردنی وەسڵ</h2>
+
+<form id="receiptForm">
+
+<label>ناوی کڕیار</label>
+<input type="text" id="customer" required>
+
+<label>ژمارەی تەلەفۆن</label>
+<input type="text" id="phone">
+
+<label>بڕی پارە</label>
+<input type="number" id="amount" required>
+
+<label>تێبینی</label>
+<textarea id="note"></textarea>
+
+<button type="submit">پاشەکەوت</button>
+
+</form>
+
+<a href="index.html">⬅ گەڕانەوە بۆ داشبۆرد</a>
+
 </div>
 
-<div class="top-buttons">
-<button class="logout">دەرچوون</button>
-<button class="save">سەلامەت</button>
-</div>
-
-</header>
-
-<section class="cards">
-
-<div class="card">
-<i class="fa-solid fa-circle-exclamation orange"></i>
-<h2>0</h2>
-<p>وەسڵی نوێ</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-circle-xmark black"></i>
-<h2>0</h2>
-<p>وەسڵی ڕەتکراو</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-circle-check green"></i>
-<h2>0</h2>
-<p>وەسڵی پەسەندکراو</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-dollar-sign red"></i>
-<h2>$0</h2>
-<p>کۆی کڕین</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-chart-column pink"></i>
-<h2>$0</h2>
-<p>فرۆشتن</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-arrow-trend-up blue"></i>
-<h2>$0</h2>
-<p>قازانج</p>
-</div>
-
-</section>
-
-<section class="buttons">
-
-<button>صندوق</button>
-
-<button>هەموو وەسڵەکان</button>
-
-<button class="add">
-<i class="fa-solid fa-plus"></i>
-دروستکردنی وەسڵ
-</button>
-
-<button>بانک</button>
-
-<button>ڕاپۆرت</button>
-
-<button>گەڕان</button>
-
-</section>
+<script src="script.js"></script>
 
 </body>
 </html>
