@@ -1,42 +1,131 @@
 <!DOCTYPE html>
 <html lang="ku" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دروستکردنی وەسڵ</title>
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMA STONE Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<div class="container">
+    <!-- Header -->
+    <header class="header">
 
-<h2>دروستکردنی وەسڵ</h2>
+        <div class="left">
+            <button class="dark-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
 
-<form id="receiptForm">
+        <div class="right">
 
-<label>ناوی کڕیار</label>
-<input type="text" id="customer" required>
+            <span class="time">
+                Friday, 24 October 2025
+            </span>
 
-<label>ژمارەی تەلەفۆن</label>
-<input type="text" id="phone">
+            <h2>ROMA STONE</h2>
 
-<label>بڕی پارە</label>
-<input type="number" id="amount" required>
+            <div class="header-buttons">
 
-<label>تێبینی</label>
-<textarea id="note"></textarea>
+                <button class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    دەرچوون
+                </button>
 
-<button type="submit">پاشەکەوت</button>
+                <button class="user">
+                    <i class="fa-solid fa-user"></i>
+                    کاربەر
+                </button>
 
-</form>
+            </div>
 
-<a href="index.html">⬅ گەڕانەوە بۆ داشبۆرد</a>
+        </div>
 
-</div>
+    </header>
 
-<script src="script.js"></script>
+    <!-- Dashboard Cards -->
+    <section class="cards">
+
+        <div class="card">
+            <i class="fa-solid fa-circle-exclamation orange"></i>
+            <h1>0</h1>
+            <p>وەسڵی نوێ</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-circle-xmark black"></i>
+            <h1>0</h1>
+            <p>وەسڵی ڕەتکراو</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-circle-check green"></i>
+            <h1>0</h1>
+            <p>وەسڵی پەسەندکراو</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-dollar-sign red"></i>
+            <h1>$0</h1>
+            <p>کۆی کڕین</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-chart-column pink"></i>
+            <h1>$0</h1>
+            <p>فرۆشتن</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-arrow-trend-up blue"></i>
+            <h1>$0</h1>
+            <p>قازانج</p>
+        </div>
+
+    </section>
+
+    <!-- Menu -->
+    <section class="menu">
+
+        <a href="cashbox.html" class="menu-btn">
+            <i class="fa-solid fa-cash-register"></i>
+            صندوق
+        </a>
+
+        <a href="receipts.html" class="menu-btn">
+            <i class="fa-solid fa-file-lines"></i>
+            هەموو وەسڵەکان
+        </a>
+
+        <a href="create.html" class="menu-btn add">
+            <i class="fa-solid fa-plus"></i>
+            دروستکردنی وەسڵ
+        </a>
+
+        <a href="bank.html" class="menu-btn">
+            <i class="fa-solid fa-building-columns"></i>
+            بانک
+        </a>
+
+        <a href="reports.html" class="menu-btn">
+            <i class="fa-solid fa-chart-pie"></i>
+            ڕاپۆرت
+        </a>
+
+        <a href="#" class="menu-btn">
+            <i class="fa-solid fa-gear"></i>
+            ڕێکخستن
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
